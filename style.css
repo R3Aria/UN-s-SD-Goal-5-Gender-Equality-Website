@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Fugaz+One&display=swap');
+
+:root{
+    /*! Try to stick to the 60 30 10 rule */
+    --color60: #5F0F40;
+    --color10: ;
+
+    /*! Dark color for the background */
+    --DarkMode: #1A1A1D;
+    --LightMode: #DEE4E7;
+    --LightMode2: #D9D9D9;
+
+    /*! Trans Flag Colors might be fitting as accents */
+    --Tblue: #55CDFC;
+    --Tpink: #F7A8B8;
+    --white: #FFFFFF;
+
+    /*! Fonts */
+    --Headings: "Fugaz One", sans-serif;
+    --Paragrphs: "Charm", cursive;
+}
+html{
+    background-color: var(--LightMode);
+}
+html,body{
+    margin: 0;
+    padding: 0;
+}
+/*& Navigation  */
+nav{
+    min-width: 4rem;
+    min-height: 100%;
+    background-color: var(--color60);
+
+    display: flex;
+    position: fixed;
+    top: 0;
+
+    font-size: 1.5rem;
+}
+nav>a{
+    text-decoration: none;
+    color: black;
+
+    padding: 2rem;
+    background-color: var(--Tpink);
+
+    transition: all 1s;
+}
+
+/*^ Hover State for Links */
+.link-Hover:hover{
+    background-color: var(--Tblue)
+}
+
+/*^ ID selectors or one uses */
+#copyright{
+    text-decoration: none;
+    color: var(--Tblue);
+}
+#Headline{
+    margin-bottom: 0;
+}
+#Subline{
+    margin-top: 0;
+    font-family: var(--Headings);
+}
+
+/*^ Consistent between pages */
+h1,h2,h3{
+    font-family: var(--Headings);
+    font-weight: 700;
+}
+p{
+    font-family: var(--Paragrphs);
+}
+header,footer,section{
+    padding-inline-start: 10rem;
+    padding-inline-end: 5rem;
+}
+header{
+    padding-top: 5rem;
+}
+
+main>section:nth-child(odd){
+    background-color: var(--LightMode2);
+}
+
+footer{
+    margin-top: 0;
+
+    width: 100%;
+    min-height: 10rem;
+
+    background-color: var(--DarkMode);
+    color: var(--LightMode);
+
+}
+
+/*^ Reuseable */
+.absoluteCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
