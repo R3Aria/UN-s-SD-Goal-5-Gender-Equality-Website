@@ -78,7 +78,7 @@ p{
     font-family: var(--Paragrphs);
 }
 header,footer,section{
-    padding-inline: 5rem;
+    padding-inline: 6rem;
 }
 header{
     padding-top: 5rem;
@@ -87,7 +87,9 @@ header{
 main>section:nth-child(odd){
     background-color: var(--LightMode2);
 }
-
+section{
+    min-height: 100vh;
+}
 footer{
 
     margin-top: 0;
