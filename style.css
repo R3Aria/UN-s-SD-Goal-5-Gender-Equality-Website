@@ -87,10 +87,13 @@ main>section:nth-child(odd){
 }
 
 footer{
+    display: flex;
+    flex-wrap: wrap;
+
     margin-top: 0;
 
     width: 100%;
-    min-height: 10rem;
+    height: clamp(6rem, 10vh, 12rem);
 
     background-color: var(--DarkMode);
     color: var(--LightMode);
@@ -102,4 +105,11 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*! Responsive design/Media Queries */
+@media (max-width: 720px) {
+    footer{
+        width: 720px;
+    }
 }
