@@ -3,6 +3,6 @@ function learnMore(){
     window.open(URL, "_self");
 }
 
-function sideMenu(){
-    
+function sideMenu(x){
+    x.classList.toggle("change");
 }
