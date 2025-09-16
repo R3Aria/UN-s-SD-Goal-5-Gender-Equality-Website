@@ -31,37 +31,77 @@ html,body{
 }
 /*& Navigation  */
 nav{
-    min-width: 4rem;
-    min-height: 4rem;
+    min-width: 25%;
+    min-height: 100%;
     background-color: var(--color60);
-    border-radius: 100%;
+    /* border-radius: 100%; */
 
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     position: fixed;
-    top: 1rem;
-    left: 1rem;
+
+    /*! For logo part */
+    /* top: 1rem; */
+    /* left: 1rem; */
+    /*!  */
+
 
     font-size: 1.5rem;
 }
-nav>a{
+#Nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    background-color: var(--color60);
+    flex-direction: column;
+    flex: 1;
+    padding-left: 0;
+    margin: 0;
+}
+#Nav-links>li{
+    list-style: none;
+    width: 100%;
+
+    text-align: center;
+    gap: 0;
+}
+.Navigation-Link{
+    display: block;
     text-decoration: none;
-    color: black;
-
     padding: 2rem;
-    background-color: var(--Tpink);
+    width: 100%;
 
-    transition: all 1s;
+    color: var(--LightMode);
+    font-family: var(--Headings);
+
+    transition: all 250ms ease-in-out;
+}
+.Navigation-Link:hover{
+    background-color: var(--Tpink);
+    color: var(--DarkMode);
 }
 #Menu-Icon{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+
     cursor: pointer;
+
+    margin: 1rem;
+    width: fit-content;
 }
 #bar1, #bar2, #bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: var(--white);
-  margin: 6px 0;
-  transition: 0.4s;
+    width: 35px;
+    height: 5px;
+    background-color: var(--white);
+    margin: .2rem 0;
+    transition: 0.4s;
+
+    box-sizing: border-box;
 }
 #bar1{
     background-color: var(--Tblue);
@@ -183,6 +223,10 @@ footer>*{
 
 /*! Responsive design/Media Queries */
 @media (max-width: 720px) {
+    nav{
+        min-width: 50%;
+    }
+
     header,footer,section{
         padding-inline: 3rem;
     }
