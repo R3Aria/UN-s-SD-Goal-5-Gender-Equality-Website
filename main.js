@@ -4,19 +4,22 @@ function learnMore(){
     window.open(URL, "_self");
 }
 
-// For the Navigation bar animation
-function sideMenu(x){
-    const menu = document.querySelectorAll(".Menu-Icon");
 
-    // Toggles the animation
+//Merging into 1 funtion
+function NavBar(x){
+    const sideBar = document.getElementById("NavContent");
+    const menuIconSlider = document.getElementById("icon-slider");
+    const icon = document.getElementById("Menu-Icon");
+
+    if(sideBar.style.width === "100%"){
+        sideBar.style.width = "0";
+    }
+    else{
+        sideBar.style.width = "100%";
+    }
+
     x.classList.toggle("change");
-}
-// SideNav
-function closeNav(){
-    let sideBar = document.getElementById("NavContent");
-    sideBar.style.width = 0;
-}
-function openNav(){
-    let sideBar = document.getElementById("NavContent");
-    sideBar.style.width = "100%";
+
+    menuIconSlider.classList.toggle("openNav");
+
 }
