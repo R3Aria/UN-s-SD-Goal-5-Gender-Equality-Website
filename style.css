@@ -274,10 +274,6 @@ footer>*{
         min-width: 50%;
     }
 
-    header,footer,section{
-        padding-inline: 3rem;
-    }
-
     #intro-paragraph{
         width: 100%;
         font-size: x-large;
