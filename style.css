@@ -274,6 +274,10 @@ footer>*{
         min-width: 50%;
     }
 
+    .backgroundOpacity{
+        padding-inline: 3rem;
+    }
+
     #intro-paragraph{
         width: 100%;
         font-size: x-large;
