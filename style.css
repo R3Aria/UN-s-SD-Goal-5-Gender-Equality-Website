@@ -147,6 +147,13 @@ nav{
 .change #bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
+.list-heading{
+    font-size: larger;
+}
+.weblink{
+    text-decoration: none;
+    color: #0056D6;
+}
 /*^ Hover State for Links */
 .link-Hover:hover{
     background-color: var(--Tblue)
@@ -207,14 +214,21 @@ p{
     font-weight: 800;
 }
 header{
-
     display: flex;
+}
+li{
+    font-family: var(--Paragrphs);
+    font-size: large;
+    font-weight: 700;
 }
 main>section:nth-child(odd){
     background-color: var(--LightMode2);
 }
-section{
+section:not(.container){
     min-height: 50vh;
+    padding-inline: 6rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 section .column-75{
     margin-bottom: 6rem;
@@ -254,12 +268,10 @@ button>*{
     font-family: var(--Headings);
 }
 footer{
-
-    margin-top: 0;
-
     max-width: 100%;
     padding-inline: 6rem;
-    height: 10rem;
+    height: 20rem;
+    bottom: 0;
 
     background-color: var(--DarkMode);
     color: var(--LightMode);
@@ -270,7 +282,6 @@ footer>p{
 footer>*{
     box-sizing: border-box;
 }
-
 /*^ Reuseable */
 .absoluteCenter{
     display: flex;

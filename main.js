@@ -1,9 +1,8 @@
-// Just redirets the user when theu click the button
 function learnMore(){
+    // Just redirets the user when theu click the button
     URL = "Other-Pages/Challenges.html"
     window.open(URL, "_self");
 }
-
 
 //Merging into 1 funtion
 function NavBar(x){
@@ -23,3 +22,4 @@ function NavBar(x){
     menuIconSlider.classList.toggle("openNav");
 
 }
+
