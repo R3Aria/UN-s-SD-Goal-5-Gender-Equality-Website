@@ -86,10 +86,11 @@ nav{
     gap: 0;
 }
 .Navigation-Link{
-    display: block;
+    display: inline-block;
     text-decoration: none;
     padding: 2rem;
-    width: 100%;
+    min-width: 80%;
+    max-width: 100%;
 
     color: var(--LightMode1);
     font-family: var(--Headings);
@@ -387,7 +388,7 @@ footer>*{
 /*! Responsive design/Media Queries */
 @media (max-width: 720px) {
     nav{
-        min-width: 50%;
+        min-width: 75%;
     }
 
     .backgroundOpacity{
