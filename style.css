@@ -329,6 +329,7 @@ footer>*{
 
     .backgroundOpacity{
         padding-inline: 2rem;
+        padding-bottom: 5rem;
     }
 
     #intro-paragraph{
@@ -350,6 +351,7 @@ footer>*{
     }
     .column-40{
         aspect-ratio: 16/9;
+        vertical-align: bottom;
     }
     #page1_img{
         background-image: url(Images/Pages/Home/Side-image-mobile.jpg);
