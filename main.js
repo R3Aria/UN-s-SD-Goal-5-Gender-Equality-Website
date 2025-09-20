@@ -4,6 +4,8 @@ function learnMore(){
     window.open(URL, "_self");
 }
 
+let openNav = false;
+
 //Merging into 1 funtion
 function NavBar(x){
     const sideBar = document.getElementById("NavContent");
@@ -12,9 +14,11 @@ function NavBar(x){
 
     if(sideBar.style.width === "100%"){
         sideBar.style.width = "0";
+        openNav = true;
     }
     else{
-        sideBar.style.width = "100%";
+        sideBar.style.width = "100%";   
+        openNav = false;
     }
 
     x.classList.toggle("change");

@@ -88,8 +88,8 @@ nav{
 .Navigation-Link{
     display: inline-block;
     text-decoration: none;
-    padding: 2rem;
-    min-width: 80%;
+    padding: 1rem 0;
+    min-width: 100%;
     max-width: 100%;
 
     color: var(--LightMode1);
