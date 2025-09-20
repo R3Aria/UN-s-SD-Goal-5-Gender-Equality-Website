@@ -27,6 +27,7 @@
 }
 html{
     background-color: var(--LightMode1);
+    transition: all 250ms ease-in-out;
 }
 
 html,body{
@@ -112,6 +113,7 @@ nav{
 
     padding: 1rem;
     background-color: var(--light1);
+    transition: all 250ms ease-in-out;
     pointer-events: all;
 }
 
@@ -232,12 +234,16 @@ nav{
 #Email:hover{
     color: var(--Tpink);
 }
+#EmailTitle{
+    margin: 0;
+}
 header>button{
     margin-bottom: 4rem;
 }
 /*^ Consistent between pages */
 li{
     list-style: none;
+    marker: none;
 }
 a{
     display: inline-block;
@@ -273,6 +279,7 @@ li{
 }
 main>section:nth-child(odd){
     background-color: var(--LightMode2);
+    transition: all 250ms ease-in-out;
 }
 section:not(.container){
     min-height: 50vh;
@@ -320,8 +327,10 @@ button>*{
 footer{
     max-width: 100%;
     padding-inline: 6rem;
-    height: 20rem;
+    min-height: 20rem;
     bottom: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
     background-color: var(--DarkMode);
     color: var(--white);
@@ -337,6 +346,9 @@ footer>*{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+
+    gap: 5rem;
 }
 .parallax{
     min-height: 100vh;
@@ -436,7 +448,7 @@ footer>*{
         background-color: var(--DarkMode2);
     }
     #Nav-Links{
-        background-color: var(--dark1) !important;
+        background-color: var(--dark1);
     }
     #Menu-Icon{
         background-color: var(--dark1);
@@ -453,6 +465,7 @@ footer>*{
     }
     a:hover{
         color: var(--LightMode2);
+        transition: all 250ms ease-in-out;
     }
 }
 @media (prefers-color-scheme: light){
