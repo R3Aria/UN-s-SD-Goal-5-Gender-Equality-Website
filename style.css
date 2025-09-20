@@ -157,9 +157,6 @@ nav{
 }
 .weblink{
     text-decoration: none;
-    color: #0056D6;
-
-    line-height: none;
 
     font-size: medium;
     text-decoration: none;
@@ -324,7 +321,7 @@ footer{
     bottom: 0;
 
     background-color: var(--DarkMode);
-    color: var(--LightMode1);
+    color: var(--white);
 }
 footer>p{
     margin-top: 0;
@@ -451,7 +448,7 @@ footer>*{
         color: var(--Tblue);
     }
     a:hover{
-        color: var(--Tpink);
+        color: var(--LightMode2);
     }
 }
 @media (prefers-color-scheme: light){
