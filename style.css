@@ -236,6 +236,9 @@ header>button{
     margin-bottom: 4rem;
 }
 /*^ Consistent between pages */
+li{
+    list-style: none;
+}
 a{
     display: inline-block;
     box-sizing:content-box;
@@ -442,6 +445,7 @@ footer>*{
         background-color: var(--dark1);
     }
     .list-heading{
+        list-style: circle;
         color: var(--white);
     }
     a{
