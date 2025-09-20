@@ -154,6 +154,11 @@ nav{
 .weblink{
     text-decoration: none;
     color: #0056D6;
+
+    line-height: none;
+
+    font-size: medium;
+    text-decoration: none;
 }
 /*^ Hover State for Links */
 .link-Hover:hover{
@@ -174,8 +179,14 @@ nav{
     background-image: url(Images/Pages/Resources/Header4.jpeg);
 }
 #copyright{
+    line-height: none;
+
+    font-size: medium;
     text-decoration: none;
     color: var(--Tblue);
+}
+#copyright:hover{
+    color: var(--Tpink);
 }
 #Headline{
     margin-bottom: 0;
@@ -210,10 +221,35 @@ nav{
     
     background-size: 100%;
 }
+#Email{
+    line-height: none;
+
+    font-size: medium;
+    text-decoration: none;
+    color: var(--Tblue);
+}
+#Email:hover{
+    color: var(--Tpink);
+}
 header>button{
     margin-bottom: 4rem;
 }
 /*^ Consistent between pages */
+a{
+    display: inline-block;
+    box-sizing:content-box;
+
+    font-family: var(--Headings);
+    text-decoration: none;
+    font-size: larger;
+    line-height: 4rem;
+
+    color: #0056D6;
+    transition: all 250ms ease-in-out;
+}
+a:hover{
+    color: #5F0F40;
+}
 h1,h2,h3{
     font-family: var(--Headings);
     font-weight: 700;
