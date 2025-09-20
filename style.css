@@ -349,9 +349,7 @@ footer>*{
         padding-inline: 2rem;
     }
     .column-40{
-        flex: 1 1 100%;
-        min-width: 100%;
-        min-height: 25rem;
+        aspect-ratio: 16/9;
     }
     #page1_img{
         background-image: url(Images/Pages/Home/Side-image-mobile.jpg);
