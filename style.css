@@ -342,6 +342,21 @@ footer>*{
         flex-wrap: wrap;
     }
     .column-60{
+        flex: 1 1 100%;
+        min-width: 100%;
+
         margin: 1rem;
+        padding-inline: 2rem;
+    }
+    .column-40{
+        flex: 1 1 100%;
+        min-width: 100%;
+        min-height: 25rem;
+    }
+    #page1_img{
+        background-image: url(Images/Pages/Home/Side-image-mobile.jpg);
+    }
+    .info-Section{
+        padding-bottom: 1rem;
     }
 }
