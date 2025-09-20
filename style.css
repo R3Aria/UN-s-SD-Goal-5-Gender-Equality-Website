@@ -164,6 +164,15 @@ nav{
 #Header1{
     background-image: url(Images/Pages/Home/Page1.jpg);
 }
+#Header2{
+    background-image: url(Images/Pages/Challenges/Header2.jpeg);
+}
+#Header3{
+    background-image: url(Images/Pages/Taking-Action/Header3.jpeg);
+}
+#Header4{
+    background-image: url(Images/Pages/Resources/Header4.jpeg);
+}
 #copyright{
     text-decoration: none;
     color: var(--Tblue);
@@ -301,6 +310,7 @@ footer>*{
     padding-top: 5rem;
     background-color: rgba(222, 228, 231, 0.6);
     padding-inline: 6rem;
+    width: 100%;
 }
 .container{
     display: flex;
