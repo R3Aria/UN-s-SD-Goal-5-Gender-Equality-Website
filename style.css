@@ -2,13 +2,16 @@
 
 :root{
     /*! Try to stick to the 60 30 10 rule */
-    --color60: #5F0F40;
-    --color10: ;
+    --light1: #A83F7D;
+    --dark1: #9B1E5B;
 
     /*! Dark color for the background */
-    --DarkMode: #1A1A1D;
-    --LightMode: #DEE4E7;
-    --LightMode2: #D9D9D9;
+    --DarkMode: #2A2A2D;
+    --LightMode1: #D0F0FF;
+    --LightMode2: #FFE8F0;
+    --DarkMode1: #2A4F5F;
+    --DarkMode2: #ac2b7e;
+
 
     /*! Trans Flag Colors might be fitting as accents */
     --Tblue: #55CDFC;
@@ -23,8 +26,9 @@
     box-sizing: border-box;
 }
 html{
-    background-color: var(--LightMode);
+    background-color: var(--LightMode1);
 }
+
 html,body{
     margin: 0;
     padding: 0;
@@ -50,7 +54,6 @@ nav{
 #NavContent{
     width: 0;
     height: 100vh;
-    background-color: var(--color60);
 
     display: flex;
     flex-direction: column;
@@ -61,6 +64,7 @@ nav{
     transition: all 200ms ease-in-out;
     pointer-events: all;
 }
+
 #Nav-links{
     display: flex;
     justify-content: center;
@@ -68,7 +72,6 @@ nav{
 
     width: 100%;
 
-    background-color: var(--color60);
     flex-direction: column;
     flex: 1;
     padding-left: 0;
@@ -87,7 +90,7 @@ nav{
     padding: 2rem;
     width: 100%;
 
-    color: var(--LightMode);
+    color: var(--LightMode1);
     font-family: var(--Headings);
 
     transition: all 250ms ease-in-out;
@@ -108,9 +111,10 @@ nav{
     transition: all 200ms ease-in-out;
 
     padding: 1rem;
-    background-color: #5F0F40;
+    background-color: var(--light1);
     pointer-events: all;
 }
+
 #icon-slider{
     position: absolute;
 
@@ -320,7 +324,7 @@ footer{
     bottom: 0;
 
     background-color: var(--DarkMode);
-    color: var(--LightMode);
+    color: var(--LightMode1);
 }
 footer>p{
     margin-top: 0;
@@ -411,5 +415,65 @@ footer>*{
     }
     footer{
         padding-inline: 3rem;
+    }
+}
+
+/*! Light mode and dark mode */
+@media(prefers-color-scheme: dark){
+    p,h1,h2,h3,button:hover{
+        color: var(--white);
+    }
+    .Navigation-Link{
+        color: var(--white);
+    }
+    .backgroundOpacity{
+        background-color: rgba(55, 60, 63, 0.8);
+    }
+    html{
+        background-color: var(--DarkMode1);
+    }
+    main>section:nth-child(odd){
+        background-color: var(--DarkMode2);
+    }
+    #Nav-Links{
+        background-color: var(--dark1) !important;
+    }
+    #Menu-Icon{
+        background-color: var(--dark1);
+    }
+    #NavContent{
+        background-color: var(--dark1);
+    }
+    .list-heading{
+        color: var(--white);
+    }
+    a{
+        color: var(--Tblue);
+    }
+    a:hover{
+        color: var(--Tpink);
+    }
+}
+@media (prefers-color-scheme: light){
+    .Navigation-Link{
+        color: var(--DarkMode);
+    }
+    html{
+        background-color: var(--LightMode1);
+    }
+    main>section:nth-child(odd){
+        background-color: var(--LightMode2);
+    }
+    #Nav-Links{
+        background-color: var(--light1);
+    }
+    #Menu-Icon{
+        background-color: var(--light1);
+    }
+    #NavContent{
+        background-color: var(--light1);
+    }
+    .Navigation-Link{
+        color: var(--white);
     }
 }
