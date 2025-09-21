@@ -242,6 +242,17 @@ header>button{
     margin-bottom: 4rem;
 }
 /*^ Consistent between pages */
+.icon{
+    margin-inline: 1rem;
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+
+    transition: all 250ms ease-in-out;
+}
+.Navigation-Link:hover .icon{
+    filter: brightness(0) saturate(100%) invert(11%) sepia(6%) saturate(617%) hue-rotate(202deg) brightness(95%) contrast(90%);
+}
 li{
     list-style: none;
     marker: none;
