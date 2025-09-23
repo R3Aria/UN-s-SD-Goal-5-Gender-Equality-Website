@@ -27,3 +27,20 @@ function NavBar(x){
 
 }
 
+// Scroll to top
+
+const button = document.getElementById("ScrollToTop");
+
+button.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+});
+
+// Open nav bar when you press a key
+window.addEventListener('keydown', (m) => {
+    if(m.key === 'm' || m.key === 'M'){
+        NavBar(document.getElementById("Menu-Icon"));
+    }
+});
