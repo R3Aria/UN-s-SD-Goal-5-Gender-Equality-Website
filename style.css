@@ -244,6 +244,10 @@ nav{
     background-color: transparent;
     border: var(--Tpink) solid;
 }
+#ScrollToTop img{
+    width: 20px;
+    height: 20px;
+}
 #ScrollToTop:hover img{
     filter: brightness(0) invert(1);
 }
